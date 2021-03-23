@@ -1,8 +1,8 @@
 const { mapFunc, filterFunc, findIndexFunc, reduceFunc, everyFunc, forEachFunc } = require("./array-functions");
 
 describe('array function recreations', () => {
+    
     describe('map function', () => {
-
         it('should take in an array of numbers and return another array with the numbers multiplied by 2', () => {
             const arr = [1, 5, 6, 8, 9, 3, 4];
     
@@ -69,7 +69,7 @@ describe('array function recreations', () => {
 
             const arr = ['dog', 'cat', 'broom', 'bird', 'dog', 'dog'];            
             const result = reduceFunc(arr, (acc, item) => {
-                acc[item] = 1
+                acc[item] = 1;
                 return acc;
             } , {});
 
